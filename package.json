@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "lint": "eslint . --config eslint.config.mjs",
+    "lint:check": "eslint . --config eslint.config.mjs",
+    "lint:fix": "eslint . --write eslint.config.mjs",
     "prepare": "husky"
   },
   "devDependencies": {
