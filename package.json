@@ -1,14 +1,23 @@
 {
+  "name": "personal-server",
+  "version": "1.0.0",
+  "description": "Home server",
+  "main": "main.ts",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon --exec ts-node --type-check src/main.ts",
     "lint:check": "eslint . --config eslint.config.mjs",
     "lint:fix": "eslint . --fix --config eslint.config.mjs"
   },
+  "author": "Dawid Chawrona",
+  "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.25.1",
     "eslint": "^9.25.1",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "globals": "^16.0.0",
+    "nodemon": "^3.1.9",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.31.0"
